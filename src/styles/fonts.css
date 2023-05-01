@@ -1,0 +1,41 @@
+@font-face {
+    src:
+            url(Bungee-Regular.ttf) format('ttf');
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    src:
+            url(Yanone.ttf) format('ttf');
+    font-family: 'Yanone';
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+@font-face {
+    src:
+            url(Biryani-Light.ttf) format('ttf');
+    font-family: 'Biryani';
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    src:
+            url(Biryani-Regular.ttf) format('ttf');
+    font-family: 'Biryani';
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    src:
+            url(Biryani-SemiBold.ttf) format('ttf');
+
+    font-family: 'Biryani';
+    font-style: normal;
+    font-weight: 600;
+}

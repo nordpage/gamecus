@@ -1,5 +1,3 @@
-import './styles/index.css';
-
 const photos = document.querySelectorAll('.photo');
 
 photos.forEach(photo => {
@@ -12,7 +10,7 @@ photos.forEach(photo => {
     photo.setAttribute('data-index', zIndex);
     photo.setAttribute('data-angle', angle);
 
-    const title = photo.querySelector('.photo__title');
+    const title = photo.querySelector('.title');
     photo.addEventListener('click', function (){
         setDefaults();
         const clicked = photo.dataset.clicked;
@@ -30,7 +28,7 @@ photos.forEach(photo => {
 
 function setDefaults() {
     photos.forEach(photo => {
-        const title = photo.querySelector('.photo__title');
+        const title = photo.querySelector('.title');
         title.classList.remove('selected');
         const angle = photo.dataset.angle;
         const zIndex = photo.dataset.index;
@@ -39,10 +37,3 @@ function setDefaults() {
     })
 }
 
-
-
-const youtube = document.querySelector('.youtube');
-
-youtube.addEventListener('click', function () {
-    window.open('https://www.youtube.com/channel/UCTrM4QymzeuVJ8k8ihDbW_A', '_blank').focus();
-})

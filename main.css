@@ -14,6 +14,13 @@
     font-weight: 500;
 }
 
+@font-face {
+    src: url(a58d6a2a86fd431d5635.ttf) format('ttf');
+    font-family: 'Caveat';
+    font-style: italic;
+    font-weight: 500;
+}
+
 
 @font-face {
     src:
@@ -38,6 +45,44 @@
     font-family: 'Biryani';
     font-style: normal;
     font-weight: 600;
+}
+
+.stack {
+    width: 416px;
+    height: 500px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(10px, max-content)) ;
+}
+
+.photo__title {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    color: #081214;
+    position: relative;
+    left: 40px;
+    bottom: 70px;
+    font-family: 'Caveat', cursive;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.photo img {
+    object-fit: cover;
+}
+.photo {
+    width: 236px;
+    height: 289px;
+    transition: rotate 0.5s, scale 0.5s ease-in-out;
+}
+
+.photo:hover {
+    cursor: pointer;
 }
 html {
 
